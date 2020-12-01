@@ -1,0 +1,131 @@
+
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex or lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{soul}
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Veenit}{Kumar}
+%\title{Computer Science Junior}                               % optional, remove / comment the line if not wanted
+\address{TechnoCity New Garia, Kolkata, West Bengal}{700152}{India}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91~6207732101}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{kveenit5@gmail.com}
+% optional, remove / comment the line if not wanted
+%homepage{https://veenits123.github.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{veenits123}                        % optional, remove / comment the line if not wanted
+%\social[github]{Veenits123}                              % optional, remove / comment the line if not wanted
+%\extrainfo{Last Updated: 09/11/2020}                 % optional, remove / comment the line if not wanted
+
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2018 -- 2022 (Expected)}{Netaji Subhash Engineering College Kolkata}{Bachelor of Technology in Computer Science and Engineering}{}{GPA: \textit{8.27/10.0} (After 4 semesters)}{}  % arguments 3 to 6 can be left empty
+%\cventry{2014--2016}{Senior Secondary, CBSE}{SGHMS}{Chandigarh}{\textit{91.6\%}}{}
+
+
+\section{Achievements}
+\cvitem{{10 Days of Code '19}}{Winner of a 10 days long coding contest organized by Coding Blocks based on Data Structures and Algorithms}
+\cvitem{{SIH '20}}{Represented NSEC in the semi-finals of the Smart India Hackathon organized by Central Government of India in January 2020. Member of the team GeeksOfCastamere.}
+
+\cvitem{Competitive Coding}{
+5-Star in Problem Solving on \href{https://www.hackerrank.com/vee_nits123}{\ul{ HackerRank}} and 4-star(Purple) on \href{https://www.codechef.com/users/im_noob99}{\ul{ Codechef}}.}
+
+\cvitem{Certificate}{ Verified Python (Advanced) Certificate \href{https://www.hackerrank.com/certificates/2485a568673c}{\ul{HackerRank}} }
+
+\section{Work experience}
+\cventry{May 2019 - July 2019}{Tech Intern}{\textbf{Coding Blocks}}{New Delhi}{}{
+\begin{itemize}%
+\item{Worked as a Teaching Assistant of the \textit{Data Structure and Algorithm }course. }
+\item{Solved more than 200 problems while clearing doubt of students.}
+\item{Gained a profiency in C++ STL and language as a whole.}
+\end{itemize}
+}
+
+\section{Projects}
+
+\cventry{June 2020 -- Aug 2020 }{\href{https://github.com/Veenits123/Maze-Generation}{Maze Generation : Kruskal's Algorithm}}{}{}{\noindent {~\hfill} {\hfill (\textit{C++})}}
+{
+    \begin{itemize}
+        \item{Implemented 2D maze generation algorithms using Kruskal's algorithm.}
+        \item{Implemented a CLI interface with an option to export to other formats.}
+    \end{itemize}
+}
+
+\cventry{Jan 2019 -- Feb 2019}{\href{https://github.com/Veenits123/Sudoku-Solver}{Sudoku Solver : Solve any Sudoku 9x9 Puzzle}}{}{}{\noindent {~\hfill} {\hfill (\textit{C++, Git})}}
+{
+    \begin{itemize}
+        \item{Implemented a user and system interacting puzzle in which user has to partially fill 9X9 2D-grid.}
+        \item{No matter how complicated or the difficulty level! Just type in the numbers on the 9x9 Sudoku grid and press Enter.}
+    \end{itemize}
+}
+
+\cventry{Oct 2018 -- Dec 2018}{\href{https://github.com/Veenits123/Rating-Diary}{Rating-Diary WebApp}}{}{}{\noindent {~\hfill} {\hfill (\textit{Python, Django, CSS, HTML})}}
+{
+    \begin{itemize}
+        \item{Web app that aggregates competitive programming ratings from different coding websites.}
+    \end{itemize}
+}
+
+\section{Technical Skills}
+\cvitem{Languages}{C, C++, Java, Python, JavaScript, SQL}
+\cvitem{Tools and Libraries}{RESTful, Git, \LaTeX, Django, Flask, Firebase}
+
+
+\section{Courses}
+\cvitem{Computer Science}{Operating Systems, Databases, Compiler Design, Computer Architecture, Formal Language \& Automata Theory, Programming and Data Structures, Algorithms, Design and Analysis of Algorithms.}
+\cvitem{Mathematics}{Linear Algebra and ODE, Real and Complex Analysis, Partial Differential Equations, Discrete Mathematics, Probability Theory, Computational Topology, Algebra.}
+\cvitem{Others}{Introduction to C++ (MIT 6.096)}
+
+\section{Positions of Responsibility}
+\cvitem{2019 -- Present}{\textbf{Coordinator, Competitive Programming (DSC NSEC)}
+    \begin{itemize}
+        \item {Wrote problems for Encoding, the monthly online coding competition of NSEC Kolkata.}
+        \item {Conducted lectures on C++, Algorithms and Data Structures for students.}
+    \end{itemize}
+}
+%\cvitem{2019 -- Present}{\textbf{Mentor, Institute Student Mentorship Programme}
+    %\begin{itemize}
+      %  \item {Academic guide to four freshmen year students over the period of two years.}
+  %  \end{itemize}
+%}
+
+\end{document}
+
+
+%% end of file `template.tex'.
